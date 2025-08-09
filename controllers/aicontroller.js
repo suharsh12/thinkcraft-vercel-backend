@@ -8,7 +8,7 @@ import fs from 'fs'
 import pdf from 'pdf-parse/lib/pdf-parse.js'
 import { auth } from "../middlewares/auth.js";
 import { userRouter } from "../routes/userRoutes.js";
-import { getPublishedCreations } from "./userController.js";
+import { getPublishedCreations } from "./usercontroller.js";
 
 const AI = new OpenAI({
     apiKey: process.env.GEMINI_API_KEY,
